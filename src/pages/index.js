@@ -39,7 +39,7 @@ class IndexPage extends Component {
     // const { user } = this.state
     return (
       <Layout>
-        <SEO title="Iznajmljivanje vozila" />
+        <SEO title="Rent a Car" />
         <div className="active-cars container">
           <div className="title">
             <h2>Vozila u Ponudi</h2>
@@ -49,19 +49,19 @@ class IndexPage extends Component {
             <Col className="gutter-row" span={8} lg={8} md={8} sm={12} xs={24}>
               <div className="card">
                 <img src={Audi_Photo} alt="Car" />
-                <span className="price">90 KM</span>
+                {/* <span className="price">90 KM</span> */}
               </div>
             </Col>
             <Col className="gutter-row" span={8} lg={8} md={8} sm={12} xs={24}>
               <div className="card">
                 <img src={golf_Photo} alt="Car" />
-                <span className="price">50 KM</span>
+                {/* <span className="price">50 KM</span> */}
               </div>
             </Col>
             <Col className="gutter-row" span={8} lg={8} md={8} sm={12} xs={24}>
               <div className="card">
                 <img src={renault_Photo} alt="Car" />
-                <span className="price">50 KM</span>
+                {/* <span className="price">50 KM</span> */}
               </div>
             </Col>
           </Row>

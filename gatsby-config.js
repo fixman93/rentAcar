@@ -52,6 +52,21 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: "gatsby-plugin-htaccess",
+      options: {
+        RewriteBase: "/",
+        https: true,
+        www: true,
+        SymLinksIfOwnerMatch: true,
+        host: "http:/www.localhost:8000/#", // if 'www' is set to 'false', be sure to also remove it here!
+        ErrorDocument: `
+          ErrorDocument 401 /error_pages/401.html
+          ErrorDocument 404 /error_pages/404.html
+          ErrorDocument 500 /error_pages/500.html
+        `,
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

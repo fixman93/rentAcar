@@ -40,6 +40,14 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
         {
+          name: `keywords`,
+          content: "Rent a car, auto, iznajmljivanje vozila"
+        },
+        {
+          name: `author`,
+          content: "Boris Civcic"
+        },
+        {
           property: `og:title`,
           content: title,
         },
@@ -75,7 +83,7 @@ function SEO({ description, lang, meta, title }) {
 SEO.defaultProps = {
   lang: `en`,
   meta: [],
-  description: ``,
+  description: `Rent a car samo za vas po veoma malim cijenama!`,
 }
 
 SEO.propTypes = {
