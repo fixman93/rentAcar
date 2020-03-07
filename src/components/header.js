@@ -13,12 +13,13 @@ class Header extends Component {
     })
   }
   render() {
+    const { title } = this.props
     return (
       <header>
         <div className="top-menu">
           <div className="container">
             <div className="logo-left">
-              <img src={logo} alt="Logo" />
+              <a href="/#"><img src={logo} alt="Logo" /></a>
             </div>
             <div className="menu-right">
               <Menu
@@ -29,6 +30,11 @@ class Header extends Component {
                 <Menu.Item key="home">
                   <a href="/#" rel="noopener noreferrer">
                     Home
+                  </a>
+                </Menu.Item>
+                <Menu.Item key="blogs">
+                  <a href="/blogs" rel="noopener noreferrer">
+                    Blog
                   </a>
                 </Menu.Item>
                 {/* <Menu.Item key="contact">
@@ -45,7 +51,7 @@ class Header extends Component {
           </div>
         </div>
         <div className="head-box container">
-          <h1>Pronadjite vozilo za Vas</h1>
+          <h1>{title ? title : "Pronadjite vozilo za Vas"}</h1>
           <p>Pozovite nas i preuzmite vozilo za vase potrebe</p>
         </div>
       </header>

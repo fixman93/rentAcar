@@ -7,6 +7,7 @@ import { Row, Col } from "antd"
 import Audi_Photo from "../assets/images/audia4.jpg"
 import golf_Photo from "../assets/images/golf.jpg"
 import renault_Photo from "../assets/images/renault.jpg"
+import aboutUs from "../assets/images/about-us.jpg"
 import "antd/dist/antd.css"
 
 class IndexPage extends Component {
@@ -78,6 +79,27 @@ class IndexPage extends Component {
             <h3>Pozovite (+387) 65-435-774</h3>
           </div>
           <p></p>
+        </section>
+        <section className="about-us-home">
+          <div className="text">
+            <h2>Sta zelite da znate o nama?</h2>
+            <p>
+              Najbolji odnos cene i kvaliteta vozila na koji cete naici. Trudimo
+              se da ispunimo sve zelje nasih musterija i da redovno prosirujemo
+              asortiman vozila. Posetite nas i iznajmite auto iz snova.
+            </p>
+          </div>
+          <div className="photo">
+            <img src={aboutUs} alt="About Us" />
+          </div>
+        </section>
+        <section className="info">
+          <div className="container">
+            <h3>
+              Ako imate pitanja slobodno nas kontaktirajte putem email adrese: 
+              <a href="mailto:civcicboris93@gmail.com"> civcicboris93@gmail.com</a>
+            </h3>
+          </div>
         </section>
         {/* <p>Hello {user ? user : "there"}</p>
         <button onClick={this.addUser}>Add User</button> */}
