@@ -19,7 +19,9 @@ class Header extends Component {
         <div className="top-menu">
           <div className="container">
             <div className="logo-left">
-              <a href="/#"><img src={logo} alt="Logo" /></a>
+              <a href="/#">
+                <img src={logo} alt="Logo" />
+              </a>
             </div>
             <div className="menu-right">
               <Menu
@@ -29,7 +31,12 @@ class Header extends Component {
               >
                 <Menu.Item key="home">
                   <a href="/#" rel="noopener noreferrer">
-                    Home
+                    Pocetna
+                  </a>
+                </Menu.Item>
+                <Menu.Item key="uslovi">
+                  <a href="/uslovi-najma" rel="noopener noreferrer">
+                    Uslovi Najma
                   </a>
                 </Menu.Item>
                 <Menu.Item key="blogs">

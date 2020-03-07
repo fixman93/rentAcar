@@ -14,7 +14,7 @@ header {
   background-size: cover;
   background-position: center;
   .top-menu {
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.69);
     padding: 1em 0;
   }
   .container {
@@ -177,23 +177,36 @@ section.video-car {
 section.about-us-home {
   display: flex;
   max-height: 400px;
-  margin-top: 2em;
+  @media (max-width: 767px) {
+    overflow: hidden;
+    flex-flow: wrap;
+    max-height: none;
+  }
   .text {
     width: 50%;
     background: #273f44;
     text-align: right;
     padding: 3em;
+    @media (max-width: 767px) {
+      width: 100%;
+      text-align: left;
+    }
   }
 }
 
 section.about-us-home .photo {
   width: 50%;
+  @media (max-width: 767px) {
+    width: 100%;
+  }
 }
 
 section.about-us-home .photo img {
   max-height: 400px;
   width: 100%;
   object-fit: cover;
+  margin: 0;
+  height: 100%;
 }
 
 section.about-us-home .text p {
@@ -202,6 +215,9 @@ section.about-us-home .text p {
   color: white;
   font-size: 1.3em;
   text-align: justify;
+  @media (max-width: 767px) {
+    max-width: 100%;
+  }
 }
 
 section.about-us-home .text h2 {
@@ -209,6 +225,9 @@ section.about-us-home .text h2 {
   color: white;
   font-weight: 600;
   font-size: 3em;
+  @media (max-width: 767px) {
+    margin-top: 0;
+  }
 }
 
 section.info {
@@ -221,6 +240,9 @@ section.info {
     text-transform: uppercase;
     font-size: 2em;
     line-height: 1.5em;
+    @media (max-width: 480px) {
+      font-size: 1em;
+    }
   }
 }
 
@@ -237,4 +259,44 @@ section.info {
 
 .blog-page {
   margin-top: 2em;
+}
+
+footer {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 30px 0;
+  h2 {
+    color: white;
+    font-size: 1.4em;
+    font-weight: bold;
+    letter-spacing: 0.03em;
+  }
+  p {
+    color: white;
+    letter-spacing: 0.03em;
+    font-weight: 500;
+  }
+  ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    li {
+      color: white;
+      font-weight: bold;
+    }
+  }
+  img {
+    max-width: 160px;
+  }
+}
+
+.conditional.container {
+  margin-bottom: 4em;
+  h2 {
+    margin-top: 2em;
+    margin-bottom: 1em;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+  }
 }

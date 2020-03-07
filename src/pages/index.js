@@ -8,6 +8,7 @@ import Audi_Photo from "../assets/images/audia4.jpg"
 import golf_Photo from "../assets/images/golf.jpg"
 import renault_Photo from "../assets/images/renault.jpg"
 import aboutUs from "../assets/images/about-us.jpg"
+import Footer from "../components/footer"
 import "antd/dist/antd.css"
 
 class IndexPage extends Component {
@@ -96,13 +97,17 @@ class IndexPage extends Component {
         <section className="info">
           <div className="container">
             <h3>
-              Ako imate pitanja slobodno nas kontaktirajte putem email adrese: 
-              <a href="mailto:civcicboris93@gmail.com"> civcicboris93@gmail.com</a>
+              Ako imate pitanja slobodno nas kontaktirajte putem email adrese:
+              <a href="mailto:civcicboris93@gmail.com">
+                {" "}
+                civcicboris93@gmail.com
+              </a>
             </h3>
           </div>
         </section>
         {/* <p>Hello {user ? user : "there"}</p>
         <button onClick={this.addUser}>Add User</button> */}
+        <Footer />
       </Layout>
     )
   }
